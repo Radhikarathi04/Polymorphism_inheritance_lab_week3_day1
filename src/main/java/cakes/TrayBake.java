@@ -8,4 +8,19 @@ public class TrayBake extends Cake {
         super(name, baseFlavour, healthy);
         this.type = type;
     }
+
+    @Override
+    public String mixIngredients() {
+        return "Ingredients are not mixed";
+    }
+
+    @Override
+    public boolean checkHasBeenReserved() {
+        return true;
+    }
+
+    @Override
+    public String scanBarcode() {
+        return "Yes";
+    }
 }

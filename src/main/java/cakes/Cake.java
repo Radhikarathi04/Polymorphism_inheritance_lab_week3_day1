@@ -1,6 +1,8 @@
 package cakes;
 
-public abstract class Cake {
+import interfaces.ISell;
+
+public abstract class Cake implements ISell {
 
     protected String name;
     private String baseFlavour;
@@ -12,6 +14,7 @@ public abstract class Cake {
         this.healthy = healthy;
     }
 
+    // GETTERS & SETTERS
     public String getName() {
         return name;
     }
@@ -35,4 +38,8 @@ public abstract class Cake {
     public void setHealthy(boolean healthy) {
         this.healthy = healthy;
     }
+
+
+    //ABSTRACT METHOD
+    public abstract String mixIngredients();
 }

@@ -9,4 +9,29 @@ public class Cupcake extends Cake {
         this.topping = topping;
     }
 
+//    Method
+    public String addTheme(String theme) {
+        return theme;
+    }
+
+
+//    Method Overload
+    public String addTheme(String theme, String personalisedMessage) {
+        return personalisedMessage;
+    }
+
+    @Override
+    public String mixIngredients() {
+        return "Ingredients are mixed";
+    }
+
+    @Override
+    public boolean checkHasBeenReserved() {
+        return true;
+    }
+
+    @Override
+    public String scanBarcode() {
+        return "Yes";
+    }
 }

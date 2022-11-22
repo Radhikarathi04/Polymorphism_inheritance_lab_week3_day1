@@ -8,12 +8,15 @@ public class Bakery {
 
     private String name;
     private ArrayList<Cake> cakes;
+    private double till;
 
     public Bakery(String name) {
         this.name = name;
         this.cakes = new ArrayList<>();
+        this.till = till;
     }
 
+//    GETTERS & SETTERS
     public String getName() {
         return name;
     }
